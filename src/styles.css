@@ -98,9 +98,10 @@ ul {
 .pokemon-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
-  padding: 0;
+  align-items: center;
+  margin: auto;
   list-style: none;
 }
 
@@ -115,6 +116,24 @@ ul {
   justify-content: center;
   align-items: center;
   border: solid 2px #000;
+}
+
+@media (min-width: 576px) {
+  .pokemon-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 792px) {
+  .pokemon-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .pokemon-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* normal */
