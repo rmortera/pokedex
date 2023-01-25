@@ -48,7 +48,7 @@ const Pokedex = () => {
 
   return (
     <div>
-      <h3>Welcome {userName}!</h3>
+      <h1>Welcome {userName}!</h1>
       <div>
         <input
           className="input-pokemon"
@@ -88,6 +88,12 @@ const Pokedex = () => {
         >
           Next page
         </button>
+      </div>
+      <br />
+      <div>
+        <h2>Choose your Pokemon</h2>
+        <hr />
+        <br />
       </div>
       <h1>{types.name}</h1>
 
